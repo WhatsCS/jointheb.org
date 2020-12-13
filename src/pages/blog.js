@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+/* import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { PageLayout, PageTitle, BlogLink } from "../components"
+import { PageLayout, PageTitle } from "../components"
 import { SEO, Utils } from "../utils"
 import { Container, Form, FormControl } from "react-bootstrap"
 
@@ -119,3 +119,4 @@ export const query = graphql`
     }
   }
 `
+ */
