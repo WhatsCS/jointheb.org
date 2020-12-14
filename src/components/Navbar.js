@@ -1,18 +1,17 @@
 import React, { useContext } from "react"
 import ThemeContext from "../utils/theme"
-import { Navbar, Nav, Form } from "react-bootstrap"
+import { Navbar, Nav, Form, Image } from "react-bootstrap"
 import { Link } from "gatsby"
 import "./Fontawesome.js"
-import startrek_white from "../../static/icons/startrek_white.inline.svg"
 
 export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
-        <img
-          src={`${dark ? startrek_white : startrek_white}`}
-          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+        <Image
+          src={`../../icons/startrek_white.inline.svg`}
+          className={`brand-icon`}
           title="Home"
           alt={`${dark ? "The Borg" : "Star Fleet"}`}
           height={50}
@@ -24,9 +23,6 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          {/* <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
-            Blog
-          </Nav.Link> */}
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
           </Nav.Link>
