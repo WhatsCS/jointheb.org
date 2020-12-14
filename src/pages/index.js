@@ -38,14 +38,14 @@ export default ({ data }) => {
           <p>
             <i>
               {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {dark ? `Resistance is futile.` : `Fleet commander by night`}
             </i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
+            href="https://www.github.com/WhatsCS"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +56,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/evan-valmassoi-evalcode"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,7 +66,7 @@ export default ({ data }) => {
               title="LinkedIn"
             />
           </a>
-          <a
+          {/* <a
             href="https://www.freecodecamp.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,8 +76,8 @@ export default ({ data }) => {
               className="icons fcc"
               title="FreeCodeCamp"
             />
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://www.hackerrank.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -87,9 +87,9 @@ export default ({ data }) => {
               className="icons hr"
               title="Hackerrank"
             />
-          </a>
+          </a> */}
           <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:evalcode@jointheb.org"
             target="_blank"
             rel="noopener noreferrer"
           >

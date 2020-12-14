@@ -1,3 +1,4 @@
+// TODO: Remove sounds, or change.
 import React, { Component } from "react"
 import { Howl } from "howler"
 

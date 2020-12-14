@@ -19,7 +19,6 @@ module.exports = {
     unemployed: true,
     designations: [
       `Coding Monkey`,
-      `Jedi Master`,
       `Binary Sunset Enthusiast`,
       `Moisture Farmer`,
     ],
@@ -75,12 +74,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe's Personal Site`,
-        short_name: `J.Doe`,
+        name: `Evan Valmassoi's Personal Site`,
+        short_name: `E.Valmassoi`,
         description: `This is my personal site.`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: `#D8DEE9`,
+        theme_color: `#D8DEE9`,
         display: `standalone`,
         icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
       },
@@ -99,6 +98,14 @@ module.exports = {
       options: {
         color: `tomato`,
         showSpinner: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
       },
     },
   ],
