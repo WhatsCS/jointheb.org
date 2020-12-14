@@ -17,14 +17,14 @@ export default ({ data }) => {
   const {
     author,
     occupation,
-    readingList,
+    // readingList,
     showsList,
     designations,
     unemployed,
   } = data.site.siteMetadata
   const { toString } = useContext(ThemeContext)
 
-  const bookLinks = readingList.map(book => MediaLink(book))
+  // const bookLinks = readingList.map(book => MediaLink(book))
   const showLinks = showsList.map(show => MediaLink(show))
 
   return (
@@ -50,30 +50,17 @@ export default ({ data }) => {
           </p>
           <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              padawan
-            </a>
-            &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            <b>{occupation}</b> traveling through the world of programming,
+            learning all I can.
           </p>
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+            I like to spend my spare time working on random personal 
+            programming projects, playing guitar, and flying around 
+            in a F-15C in DCS.
           </p>
           <p className="i-5">
             Check out my <Link to="/projects">projects</Link> to see what I've
-            been up to! Or check out my <Link to="/blog">blog</Link> to see
-            what's recently caught my eye!
+            been up to!
           </p>
         </article>
         <article className="w-75 m-auto">
@@ -98,20 +85,14 @@ export default ({ data }) => {
             </>
           )}
           <hr />
-          <h5 className="watch-list-title pt-4">
+          {/* <h5 className="watch-list-title pt-4">
             Here are a couple of books from my reading list:
           </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
+          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul> */}
           <h5 className="watch-list-title pt-4">
             Here are a couple of shows from my watch list:
           </h5>
           <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{showLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of movies from my watch list:
-          </h5>
-          <p>
-            <i>...waaaay too many to list.</i>
-          </p>
         </article>
       </Container>
     </PageLayout>
@@ -126,11 +107,6 @@ export const query = graphql`
         occupation
         author
         designations
-        readingList {
-          title
-          author
-          link
-        }
         showsList {
           title
           author
@@ -140,3 +116,8 @@ export const query = graphql`
     }
   }
 `
+        // readingList {
+        //   title
+        //   author
+        //   link
+        // }
