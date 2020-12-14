@@ -17,12 +17,12 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={dark ? `../../icons/borg-logo-fix.png` : `../../icons/star-fleet.png`}
+          alt={dark ? "The Borg" : "Star Fleet"}
         />
         {unemployed && (
           <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
+            <b> Howdy! I'm currently looking for new opportunities!</b>
           </p>
         )}
         <Container className="py-0 my-0">
@@ -66,28 +66,6 @@ export default ({ data }) => {
               title="LinkedIn"
             />
           </a>
-          {/* <a
-            href="https://www.freecodecamp.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "free-code-camp"]}
-              className="icons fcc"
-              title="FreeCodeCamp"
-            />
-          </a> */}
-          {/* <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
-            />
-          </a> */}
           <a
             href="mailto:evalcode@jointheb.org"
             target="_blank"
