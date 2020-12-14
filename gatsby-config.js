@@ -22,23 +22,23 @@ module.exports = {
       `Binary Sunset Enthusiast`,
       `Moisture Farmer`,
     ],
-    readingList: [
-      {
-        title: `Sapiens: A Brief History of Humankind`,
-        author: `Yuval Noah Harari`,
-        link: `https://www.goodreads.com/book/show/23692271-sapiens`,
-      },
-      {
-        title: `Behave: The Biology of Humans at our Best and Worst`,
-        author: `Robert Sapolsky`,
-        link: `https://www.goodreads.com/book/show/31170723-behave`,
-      },
-      {
-        title: `The Gene: An Intimate History`,
-        author: `Siddhartha Mukeherjee`,
-        link: `https://www.goodreads.com/book/show/27276428-the-gene`,
-      },
-    ],
+    // readingList: [
+    //   {
+    //     title: `Sapiens: A Brief History of Humankind`,
+    //     author: `Yuval Noah Harari`,
+    //     link: `https://www.goodreads.com/book/show/23692271-sapiens`,
+    //   },
+    //   {
+    //     title: `Behave: The Biology of Humans at our Best and Worst`,
+    //     author: `Robert Sapolsky`,
+    //     link: `https://www.goodreads.com/book/show/31170723-behave`,
+    //   },
+    //   {
+    //     title: `The Gene: An Intimate History`,
+    //     author: `Siddhartha Mukeherjee`,
+    //     link: `https://www.goodreads.com/book/show/27276428-the-gene`,
+    //   },
+    // ],
     showsList: [
       {
         title: `Avatar: The Last Airbender`,
