@@ -54,8 +54,8 @@ body {
 
 // light mode
 .custom-control-input ~ .custom-control-label::before {
-  border-color: $yellow;
-  background-color: $yellow;
+  border-color: $nord13;
+  background-color: $nord13;
 }
 
 .custom-switch .custom-control-input ~ .custom-control-label::after {
@@ -64,8 +64,8 @@ body {
 
 // dark mode
 .custom-control-input:checked ~ .custom-control-label::before {
-  border-color: $black;
-  background-color: $black;
+  border-color: $nord0;
+  background-color: $nord0;
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
@@ -86,18 +86,9 @@ body {
 
 .brand-icon {
   font-size: 2.75rem;
-  color: $gray-700;
+  color: $nord4;
   &:hover {
-    color: $faded-red;
-  }
-  &.empire {
-    border-radius: 50%;
-    color: $white;
-    background: $black;
-    &:hover {
-      color: $black;
-      background: $white;
-    }
+    color: $nord14;
   }
 }
 /** Home Page Icon Styling END */
