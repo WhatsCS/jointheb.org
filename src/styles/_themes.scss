@@ -18,6 +18,7 @@ $themes: (
     textColor: $nord0,
     firstName: $nord15,
     lastName: $nord10,
+    linkColor: $nord7,
     linkHover: $nord3,
     themeColor: $nord6,
     heartColor: pink,
@@ -33,13 +34,15 @@ $themes: (
   dark: (
     backgroundColor: $nord0,
     footerBackground: $nord0,
-    secondary: $nord1,
+    secondary: $nord7,
     navBackground: $nord2,
+    linkColor: $nord8,
     linkHover: $nord5,
     textColor: $nord6,
     firstName: $nord14,
     lastName: $nord11,
     titleColor: $nord6,
+    mutedColor: scale-color($nord4, $lightness: -10%),
     hrefColor: $nord12,
     themeColor: $nord0,
     heartColor: red,
@@ -48,7 +51,7 @@ $themes: (
     mail: $nord11,
     file: $nord11,
     iconBackground: $nord0,
-    cardBackground: $nord0,
+    cardBackground: $nord3,
   ),
 );
 
@@ -129,8 +132,6 @@ $themes: (
 
 .card-container {
   @include themify($themes) {
-    width: 25rem;
-    height: 23rem;
     text-decoration-color: themed("hrefColor");
     & * {
       background: themed("cardBackground");
@@ -165,12 +166,6 @@ $themes: (
     &.linkedin {
       color: themed("linkedin");
     }
-    // &.fcc {
-    //   color: themed("fcc");
-    // }
-    // &.hr {
-    //   color: themed("hr");
-    // }
     &.mail {
       color: themed("mail");
     }
@@ -184,7 +179,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.card-title {
   @include themify($themes) {
     color: themed("titleColor");
   }
@@ -199,5 +195,20 @@ div {
 p {
   @include themify($themes) {
     color: themed("textColor");
+  }
+}
+
+a {
+  @include themify($themes) {
+    color: themed("linkColor");
+    &:hover {
+      color: scale-color(themed("linkColor"), $lightness: -40%);
+    }
+  }
+}
+
+.text-muted {
+  @include themify($themes) {
+    color: themed("mutedColor") !important;
   }
 }

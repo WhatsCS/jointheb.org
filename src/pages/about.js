@@ -1,31 +1,23 @@
 import React, { useContext } from "react"
-import { PageLayout, PageTitle } from "../components"
-import { Container, Image } from "react-bootstrap"
+import { PageLayout, PageTitle, MediaLink } from "../components"
+import { Container, CardGroup, Image } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
 import { ThemeContext, SEO } from "../utils"
 
 export default ({ data }) => {
-  const MediaLink = ({ title, author, link }) => (
-    <li key={title} style={{ color: "gray" }}>
-      <a rel="noopener noreferrer" href={link}>
-        {title}
-      </a>
-      &nbsp;-<i>{author}</i>
-    </li>
-  )
-
   const {
     author,
+    email,
     occupation,
-    // readingList,
     showsList,
+    moviesList,
     designations,
     unemployed,
   } = data.site.siteMetadata
   const { toString } = useContext(ThemeContext)
 
-  // const bookLinks = readingList.map(book => MediaLink(book))
   const showLinks = showsList.map(show => MediaLink(show))
+  const movieLinks = moviesList.map(movie => MediaLink(movie))
 
   return (
     <PageLayout>
@@ -54,9 +46,9 @@ export default ({ data }) => {
             learning all I can.
           </p>
           <p className="i-5">
-            I like to spend my spare time working on random personal 
-            programming projects, playing guitar, and flying around 
-            in a F-15C in DCS.
+            I like to spend my spare time working on random personal programming
+            projects, playing guitar, building computers and flying around in a
+            F-15C in DCS.
           </p>
           <p className="i-5">
             Check out my <Link to="/projects">projects</Link> to see what I've
@@ -73,7 +65,7 @@ export default ({ data }) => {
                   like what you <Link to="/resume">see</Link>, let's get
                   in&nbsp;
                   <a
-                    href="mailto:red.five@rebellion.com"
+                    href={`mailto:${email}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -85,14 +77,18 @@ export default ({ data }) => {
             </>
           )}
           <hr />
-          {/* <h5 className="watch-list-title pt-4">
-            Here are a couple of books from my reading list:
-          </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul> */}
           <h5 className="watch-list-title pt-4">
-            Here are a couple of shows from my watch list:
+            Here are a couple of my favorite movies:
           </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{showLinks}</ul>
+          <CardGroup className="card-container" style={{ fontSize: "0.9rem" }}>
+            {movieLinks}
+          </CardGroup>
+          <h5 className="watch-list-title pt-4">
+            Here are a couple of my favorite shows:
+          </h5>
+          <CardGroup className="card-container" style={{ fontSize: "0.9rem" }}>
+            {showLinks}
+          </CardGroup>
         </article>
       </Container>
     </PageLayout>
@@ -106,18 +102,21 @@ export const query = graphql`
         unemployed
         occupation
         author
+        email
         designations
+        moviesList {
+          title
+          author
+          link
+          image
+        }
         showsList {
           title
           author
           link
+          image
         }
       }
     }
   }
 `
-        // readingList {
-        //   title
-        //   author
-        //   link
-        // }
