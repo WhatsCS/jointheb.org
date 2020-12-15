@@ -10,7 +10,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <Image
-          src={`../../icons/startrek_white.inline.svg`}
+          src={`${dark ? `../../icons/borg-logo-fix.png` : `../../icons/startrek_white.inline.svg`}`}
           className={`brand-icon`}
           title="Home"
           alt={`${dark ? "The Borg" : "Star Fleet"}`}
