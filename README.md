@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b5b680e-fdc4-4a4f-beb1-26461a9000f7/deploy-status)](https://app.netlify.com/sites/jointheborg-gatsby-portfolio/deploys)
 # Jointheb.org
 
 Portfolio website using @surudhb's Gatsbyjs starter template. Below is from original README.md
