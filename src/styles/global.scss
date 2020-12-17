@@ -1,6 +1,7 @@
 @import "../../static/fonts/fonts.css";
-
 @import "themes";
+
+@import "../../node_modules/rfs/scss";
 
 html,
 body {
@@ -34,6 +35,10 @@ body {
 
 .i-5 {
   text-indent: 5vmin;
+}
+
+h1 {
+  @include font-size(5rem);
 }
 
 /** Toggle Switch Styling START */
