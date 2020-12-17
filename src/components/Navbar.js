@@ -10,7 +10,11 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <Image
-          src={`${dark ? `../../icons/borg-logo-fix.png` : `../../icons/startrek_white.inline.svg`}`}
+          src={`${
+            dark
+              ? `../../icons/borg-logo-fix.png`
+              : `../../icons/startrek_white.inline.svg`
+          }`}
           className={`brand-icon`}
           title="Home"
           alt={`${dark ? "The Borg" : "Star Fleet"}`}
@@ -29,7 +33,13 @@ export default () => {
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
+          <Nav.Link
+            className="ml-2"
+            as={Link}
+            to="/resume"
+            title="Resume"
+            disabled
+          >
             Resume
           </Nav.Link>
           <Form className="ml-3 my-auto">
