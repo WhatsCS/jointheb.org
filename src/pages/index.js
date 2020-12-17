@@ -17,7 +17,11 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/borg-logo-fix.png` : `../../icons/star-fleet.png`}
+          src={
+            dark
+              ? `../../icons/borg-logo-fix.png`
+              : `../../icons/star-fleet.png`
+          }
           alt={dark ? "The Borg" : "Star Fleet"}
         />
         {unemployed && (
@@ -26,12 +30,7 @@ export default ({ data }) => {
           </p>
         )}
         <Container className="py-0 my-0">
-          <h1
-            style={{
-              fontSize: "5rem",
-              color: "black",
-            }}
-          >
+          <h1>
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
