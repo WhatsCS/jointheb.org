@@ -11,14 +11,14 @@ module.exports = {
     author: `Evan Valmassoi`,
     firstName: `Evan`,
     lastName: `Valmassoi`,
-    email: `evalcode@jointheb.org`,
+    email: `evan.valmassoi@gmail.com`,
     description: `Evan Valmassoi's personal site`,
     occupation: `Software Engineer`,
     keywords: [`Evan`, `Valmassoi`, `Personal`, `Resume`, `Projects`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
-    designations: [``, `Binary Sunset Enthusiast`, `Moisture Farmer`],
+    designations: [`Code Explorer`, `Music Nerd`],
     moviesList: [
       {
         title: `Arrival`,

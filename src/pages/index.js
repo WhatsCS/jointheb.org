@@ -66,7 +66,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="mailto:evalcode@jointheb.org"
+            href="mailto:evan.valmassoi@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
