@@ -2,7 +2,7 @@
   "name": "jointheb-org-portfolio-site",
   "private": true,
   "description": "A personal site built on the bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -51,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/surudhb/gatsby-personal-site-template"
+    "url": "https://github.com/WhatsCS/jointheb.org"
   },
   "bugs": {
-    "url": "https://github.com/surudhb/gatsby-personal-site-template/issues"
+    "url": "https://github.com/WhatsCS/jointheb.org/issues"
   }
 }
