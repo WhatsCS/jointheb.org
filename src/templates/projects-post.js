@@ -21,6 +21,7 @@ export default ({ data }) => {
       subTitle={<SubTitle tags={post.frontmatter.tags} />}
       excerpt={post.excerpt}
       html={post.html}
+      url={post.frontmatter.url}
     />
   )
 }
@@ -32,6 +33,8 @@ export const query = graphql`
       frontmatter {
         title
         tags
+        date
+        url
       }
       excerpt
     }

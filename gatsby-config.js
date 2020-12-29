@@ -14,6 +14,7 @@ module.exports = {
     email: `evan.valmassoi@gmail.com`,
     description: `Evan Valmassoi's personal site`,
     occupation: `Software Engineer`,
+    github: `WhatsCS`,
     keywords: [`Evan`, `Valmassoi`, `Personal`, `Resume`, `Projects`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
