@@ -2,6 +2,7 @@
 title: "Jointheborg"
 tags: ["Project", "Portfolio", "Gatsby", "React", "GraphQL"]
 date: "2020-12-13"
+url: "https://github.com/whatscs/jointheb.org"
 ---
 
 This site! Using a Gatsbyjs starter built off of bootstrap, with all needed SEO/image supports already included and configured. 
