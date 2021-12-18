@@ -13,12 +13,12 @@ module.exports = {
     lastName: `Valmassoi`,
     email: `evan.valmassoi@gmail.com`,
     description: `Evan Valmassoi's personal site`,
-    occupation: `Software Engineer`,
+    occupation: `System Administrator`,
     github: `WhatsCS`,
     keywords: [`Evan`, `Valmassoi`, `Personal`, `Resume`, `Projects`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
-    unemployed: true,
+    unemployed: false,
     designations: [`Code Explorer`, `Music Nerd`],
     moviesList: [
       {
